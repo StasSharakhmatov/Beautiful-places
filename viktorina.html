@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+
+ <meta charset="utf-8">
+ <title> Beautiful places </title>
+
+ <link rel="stylesheet" type="text/css" href="viktorina.css">
+ <link rel="stylesheet" href="animate.css">
+ <script src="viktorina.js"></script>
+ <script src="wow.min.js"></script>
+ <script>
+ 	new WOW().init();
+ </script>
+
+</head>
+
+<body>
+
+	<center class="wow bounceIn" data-wow-duration = "2s">
+
+	<p id="vopros" style="font-size: 33px;font-weight: bold;padding-top: 2px";>Вот Вы и добрались до викторины от Beautiful places!<br>Готовы проверить свои новые знания?</p>
+
+	<p style="font-size: 38px;font-weight: bold;padding-top: 2px"; id="result"></p>
+
+	<p style="font-size: 38px;font-weight: bold;padding-top: 2px"; id="question"></p>
+
+	<button onclick="viktorina(1)" class="vik" id="variant1"></button>
+	<button onclick="viktorina(2)" class="vik" id="variant2"></button>
+	<button onclick="viktorina(3)" class="vik" id="variant3"></button>
+	<button onclick="viktorina(4)" class="vik" id="variant4"></button>
+
+	</center><br>
+
+	<center class="wow bounceIn" data-wow-duration = "2s" data-wow-delay = "2s">
+
+	<button id="start" class="vik" onclick="viktorina(0)">Я готов!</button>
+
+	<script type="text/javascript"> 
+		var curentUrl = document.URL; 
+		document.write("<a id='end' style='display: none;' class='vik' href='" + curentUrl + "'>Начать сначала</a>"); 
+	</script>
+
+	</center><br>
+
+	<center class="wow bounceIn" data-wow-duration = "2s" data-wow-delay = "3s">
+		<a href="indexFlex.html" class="vik">Вернуться на главную</a>
+	</center>
+
+</body>
+
+</html>

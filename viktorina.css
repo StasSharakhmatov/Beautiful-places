@@ -1,0 +1,22 @@
+body{
+	background:url(images/fon.jpg);
+	font-family: Gabriola, Segoe Script, Verdana, sans-serif;
+	color: white;
+}
+
+#variant1,#variant2,#variant3,#variant4{
+	display:none;
+	margin-bottom: 10px;
+}
+
+.vik{
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fff;
+    background: maroon;
+    padding: 4px 8px;
+	border: 0;
+	border-radius: 15px;
+	cursor: pointer;
+}

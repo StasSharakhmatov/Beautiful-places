@@ -1,0 +1,167 @@
+body {
+	background: url(images/sushafonFlex.jpg);
+	font-family: Gabriola, Verdana, sans-serif;
+	color: maroon;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 0px;
+}
+
+.sushaHeader{
+	background: url(images/sushaHeader.jpg); 
+	margin: 10px 10px 0 10px;
+	border-radius: 15px;
+}
+
+.pages {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.pages div {
+	flex: 1;
+}
+
+.nav {
+	display: flex;
+	flex-flow: wrap;
+}
+
+.nav a {
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 5px 0 5px;
+	margin-bottom: 5px;
+}
+
+.slogan {
+	text-align: right;
+}
+
+.menu {
+	margin: 0px 10px 0px 10px;
+}
+
+.menu a:link, a:visited {
+	color: #FFD700;
+ 	border-bottom: none;
+ 	font-weight: bold;
+ 	text-decoration: none;
+}
+
+.selected {
+ 	background-color: maroon;
+ 	border-radius: 15px;
+ }
+
+.sushaContainerFlex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sushaContainerFlex div {
+	margin: 10px 10px 0px 10px;
+	padding: 10px;
+}
+
+.sushaInterestingFact {
+	min-width: 220px;
+	flex: 1 1;
+	background: url(images/bokfonSushaFlex.jpg);
+	font-size: 21px;
+	text-align: center;
+	border-radius: 20px;
+	border-style: double;
+}
+
+.sushaMainContent {
+	min-width: 450px;
+	flex: 2 1;
+	font-size: 21px;
+	text-align: center;
+}
+
+.sushaMainContent a {
+	text-decoration: none;
+	color: maroon;
+}
+
+.sushaMap {
+	min-width: 220px;
+	flex: 1 1;
+	background: url(images/bokfonSushaFlex.jpg);
+	font-size: 21px;
+	text-align: center;
+	border-radius: 20px;
+	border-style: double;
+}
+
+.footer {
+	font-size: 21px;
+	text-align: center;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+}
+
+.sushaImg {
+	border-radius: 10px;
+	width: 100%;
+}
+
+.logo {
+	width: 180px;
+	height: 130px;
+}
+
+@media (max-width: 768px) {
+
+	.logo {
+		text-align: center;
+		width: 132px;
+		height: 100px;
+	}
+
+	.sushaMainContent {
+		order: 1;
+	}
+
+	.sushaInterestingFact {
+		order: 2;
+	}
+
+	.sushaMap {
+		order: 3;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.sushaContainerFlex {
+		flex-flow: column;
+	}
+
+	.sushaMainContent {
+		order: 1;
+		width: 250px;
+	}
+
+	.sushaInterestingFact {
+		order: 2;
+	}
+
+	.sushaMap {
+		order: 3;
+	}
+
+	.nav {
+		flex-flow: column;
+		text-align: center;
+	}
+
+	.slogan img {
+		width: 330px;
+		height: 110px;
+		margin-top: 10px;
+	}
+}

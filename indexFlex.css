@@ -1,0 +1,197 @@
+body {
+	background: url(images/fonFlex.jpg);
+	font-family: Gabriola, Segoe Script, Verdana, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.4em;
+	margin: 0px;
+}
+
+.header {
+	background: url(images/header.jpg); 
+	margin: 10px;
+	border-radius: 15px;
+}
+
+.pages {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.pages div {
+	flex: 1;
+}
+
+.nav {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.nav a {
+	text-decoration: none;
+	font-weight: bold;
+	padding: 5px 5px 0 5px;
+	margin-bottom: 5px;
+}
+
+.slogan {
+	text-align: right;
+}
+
+.slogan img {
+	width: 450px;
+	height: 150px;
+}
+
+.menu {
+	margin: 0px 10px 0px 10px;
+	padding: 5px 0px 0px 0px;
+}
+
+.containerFlex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.containerFlex div {
+	flex: 1;
+	margin: 10px 10px 0px 10px;
+}
+
+.content {
+	min-width: 200px;
+	color: #006400;
+	background: url(images/okeanFlex.jpg);
+	text-align: center;
+	font-size: 1.3em;
+	padding: 15px;
+	border-radius: 15px;
+	opacity: 0.8;
+	transition-duration: 2s;
+}
+
+.content:hover {
+	opacity: 1;
+	-webkit-transform: scale(1.05);
+  	-ms-transform: scale(1.05);
+  	transform: scale(1.05);
+}
+
+.main {
+	min-width: 200px;
+	color: #8B4513;
+	background: url(images/pustynyaFlex.jpg);
+	text-align: center;
+	font-size: 1.3em;
+	padding: 15px;
+	border-radius: 15px;
+	opacity: 0.8;
+	transition-duration: 2s;
+}
+
+.main:hover {
+	opacity: 1;
+	-webkit-transform: scale(1.05);
+  	-ms-transform: scale(1.05);
+  	transform: scale(1.05);
+}
+
+.sidebar {
+	min-width: 200px;
+	color: #F0FFF0;
+	background: url(images/zvezdyFlex.jpg);
+	text-align: center;
+	font-size: 1.3em;
+	padding: 15px;
+	border-radius: 15px;
+	opacity: 0.8;
+	transition-duration: 2s;
+}
+.sidebar:hover {
+	opacity: 1;
+	-webkit-transform: scale(1.05);
+  	-ms-transform: scale(1.05);
+  	transform: scale(1.05);
+}
+
+.footer {	
+	color: #ADD8E6;
+	text-align: center;
+	padding: 15px;
+	margin: 10px;
+}
+
+.menu a:link, a:visited {
+	color: #66CDAA;
+ 	border-bottom: none;
+ 	font-weight: bold;
+ 	text-decoration: none;
+}
+
+.selected {
+ 	background: url(images/nav.jpg);
+ 	border-radius: 15px;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 30px;
+	text-align: center;
+}
+
+p {
+	font-size: 23px;
+}
+
+.img {
+	border-radius: 15px;
+	width: 100%;
+}
+
+.logo {
+	width: 180px;
+	height: 130px;
+}
+
+#voda {
+	text-decoration: none;
+	color: #006400;
+}
+
+#susha {
+	text-decoration: none;
+	color: #8B4513;
+}
+
+#kosmos {
+	text-decoration: none;
+	color: #F0FFF0;
+}
+
+@media (max-width: 750px) {
+
+	.logo {
+		text-align: center;
+		width: 132px;
+		height: 100px;
+	}
+
+}
+
+@media (max-width: 500px) {
+
+	.slogan img {
+		width: 330px;
+		height: 110px;
+		margin-top: 10px;
+	}
+
+	.nav {
+		flex-flow: column;
+		text-align: center;
+	}
+
+	.containerFlex {
+		flex-flow: column;
+	}
+
+}
